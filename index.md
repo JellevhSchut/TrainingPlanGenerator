@@ -10,7 +10,16 @@ Please enter your calculated VDOT from the calculator above and select your targ
 
 <form id="planForm">
   <label for="vdot">VDOT:</label><br>
-  <input type="number" id="vdot" name="vdot" required><br><br>
+  <input type="number" step="0.1" id="vdot" name="vdot" required><br><br>
+
+  <label for=currmileage>Current average weekly distance over last 4 weeks:</label><br>
+  <input type="number" step="0.1" id="currmileage" name="currmileage" required><br><br>
+
+  <label for=targmileage>Target weekly distance:</label><br>
+  <input type="number" step="0.1" id="targmileage" name="targmileage" required><br><br>
+
+  <label for=runningdays>How many days a week can you run?</label><br>
+  <input type="number" min="1" max="7" id="runningdays" name="runningdays" required><br><br>
 
   <label for="distance">Distance:</label><br>
   <select id="distance" name="distance">
