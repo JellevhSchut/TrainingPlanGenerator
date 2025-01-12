@@ -1,4 +1,4 @@
-# Training Plan Generator
+# Daniels' Running Formula Plan Generator
 
 Welcome to the **Training Plan Generator**! Use the VDOT Running Calculator below to calculate your VDOT. You can then use this number to generate a customized running training plan based on your VDOT score and target race distance.
 
