@@ -1,16 +1,21 @@
 document.getElementById('planForm').addEventListener('submit', (e) => {
-    e.preventDefault();
+    e.preventDefault();  // Prevent the default form submission (page reload)
 
     const vdot = document.getElementById('vdot').value;
     const distance = document.getElementById('distance').value;
 
-    // Generate a plan based on VDOT and distance
-    const plan = generateTrainingPlan(vdot, distance);
+    // Check if VDOT and distance are entered
+    if (vdot && distance) {
+        // Generate a plan based on VDOT and distance
+        const plan = generateTrainingPlan(vdot, distance);
 
-    // Display the generated plan
-    const planDiv = document.getElementById('plan');
-    planDiv.innerHTML = `<h2>Your Training Plan:</h2>`;
-    planDiv.innerHTML += plan.map((day, index) => `<p>Day ${index + 1}: ${day}</p>`).join('');
+        // Display the generated plan
+        const planDiv = document.getElementById('plan');
+        planDiv.innerHTML = `<h2>Your Training Plan:</h2>`;
+        planDiv.innerHTML += plan.map((day, index) => `<p>Day ${index + 1}: ${day}</p>`).join('');
+    } else {
+        alert('Please enter both your VDOT value and select a race distance.');
+    }
 });
 
 function generateTrainingPlan(vdot, distance) {
