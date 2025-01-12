@@ -2,7 +2,11 @@
 
 Welcome to the **Training Plan Generator**! Use the VDOT Running Calculator below to calculate your VDOT. You can then use this number to generate a customized running training plan based on your VDOT score and target race distance.
 
-<iframe src='https://vdoto2.com/calculator/embed' width='600' height='1400' frameborder='0' scrolling='no'></iframe>
+<iframe src="https://vdoto2.com/calculator/embed" width="600" height="1400" frameborder="0" scrolling="no"></iframe>
+
+## Enter Your VDOT and Race Distance
+
+Please enter your calculated VDOT from the calculator above and select your target race distance to generate your customized training plan.
 
 <form id="planForm">
   <label for="vdot">VDOT:</label><br>
