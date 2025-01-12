@@ -1,8 +1,22 @@
----
-title: Daniels' Running Formula Plan Generator
-layout: default
----
+# Training Plan Generator
 
-# Daniels' Running Formula Plan Generator
+Welcome to the **Training Plan Generator**! Use the form below to generate a customized running training plan based on your VDOT score and race distance.
 
-Welcome to my running plan generator site. This tool helps you create running plans based on Jack Daniels' methodology.
+<form id="planForm">
+  <label for="vdot">VDOT:</label><br>
+  <input type="number" id="vdot" name="vdot" required><br><br>
+
+  <label for="distance">Distance:</label><br>
+  <select id="distance" name="distance">
+    <option value="5K">5K</option>
+    <option value="10K">10K</option>
+    <option value="half-marathon">Half Marathon</option>
+    <option value="marathon">Marathon</option>
+  </select><br><br>
+
+  <button type="submit">Generate Plan</button>
+</form>
+
+<div id="plan"></div>
+
+<script src="scripts/app.js"></script>
